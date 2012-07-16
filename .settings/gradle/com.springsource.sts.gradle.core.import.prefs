@@ -1,0 +1,10 @@
+#com.springsource.sts.gradle.core.preferences.GradleImportPreferences
+#Mon Jul 16 14:41:48 EDT 2012
+addResourceFilters=true
+afterTasks=afterEclipseImport;
+beforeTasks=cleanEclipse;eclipse;
+enableAfterTasks=true
+enableBeforeTasks=true
+enableDSLD=true
+enableDependendencyManagement=true
+projects=;acceptance-tests;scala-unit-tests;
