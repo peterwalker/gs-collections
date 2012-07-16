@@ -1,0 +1,5 @@
+dependencies {
+    compile project(':collections')
+    compile 'junit:junit:4.10'
+    compile 'commons-codec:commons-codec:1.5'
+}
