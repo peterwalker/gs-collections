@@ -10,6 +10,7 @@ if [ "$JAVA_HOME" ] ; then
 echo $JAVA_HOME
 else
 	JAVA_HOME="/opt/jdk/jdk1.7.0"
+	echo $JAVA_HOME
 fi
 
 # Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
