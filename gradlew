@@ -5,6 +5,12 @@
 ##  Gradle start up script for UN*X
 ##
 ##############################################################################
+# Beehive hack
+if [ "$JAVA_HOME" ] ; then
+echo $JAVA_HOME
+else
+	JAVA_HOME="/opt/jdk/jdk1.7.0"
+fi
 
 # Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 DEFAULT_JVM_OPTS="-Xmx1024m -XX:MaxPermSize=256m -Dfile.encoding=UTF-8"
