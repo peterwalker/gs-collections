@@ -1,3 +1,6 @@
+def slf4j_version='1.6.4'
 dependencies {
 	testCompile project(':collections-testutils')
+	testCompile "org.slf4j:slf4j-api:${slf4j_version}"
+	testCompile "org.slf4j:slf4j-nop:${slf4j_version}"
 }
