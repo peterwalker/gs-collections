@@ -1,1 +1,13 @@
 apply plugin:'scala'
+def slf4j_version='1.6.4'
+
+dependencies {
+    // Libraries needed to run the scala tools
+    scalaTools 'org.scala-lang:scala-compiler:2.9.1'
+    scalaTools 'org.scala-lang:scala-library:2.9.1'
+    // Libraries needed for scala api
+    testCompile 'org.scala-lang:scala-library:2.9.1'
+    testCompile project(':collections-testutils')
+    testCompile "org.slf4j:slf4j-api:${slf4j_version}"
+    testCompile "org.slf4j:slf4j-nop:${slf4j_version}"
+}
