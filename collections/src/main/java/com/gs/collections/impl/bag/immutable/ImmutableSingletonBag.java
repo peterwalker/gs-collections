@@ -240,16 +240,16 @@ final class ImmutableSingletonBag<T>
 
     public <V> ImmutableBag<V> collect(Function<? super T, ? extends V> function)
     {
-        return Bags.immutable.of(function.valueOf(this.value));
+        return (ImmutableBag<V>) Bags.immutable.of(function.valueOf(this.value));
     }
 
     public <V> ImmutableBag<V> collectIf(
             Predicate<? super T> predicate,
             Function<? super T, ? extends V> function)
     {
-        return predicate.accept(this.value)
+        return (ImmutableBag<V>) (predicate.accept(this.value)
                 ? Bags.immutable.of(function.valueOf(this.value))
-                : Bags.immutable.<V>of();
+                : Bags.immutable.<V>of());
     }
 
     @Override

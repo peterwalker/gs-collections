@@ -3,6 +3,13 @@ subprojects{
     repositories {
         mavenCentral()
     }
-//    sourceCompatibility=1.5
-//    targetCompatibility=1.5
+    sourceCompatibility=1.5
+	targetCompatibility=1.5
+	buildscript {
+		dependencies {
+			classpath fileTree(dir: '/Users/peterwalker/.m2/repository/com/gradleware/discovery-plugin/0.1-20120727073118-0400', include: '*.jar')
+		}
+	}
+	
+	apply plugin: 'build-monitor'
 }
