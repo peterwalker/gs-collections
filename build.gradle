@@ -5,9 +5,7 @@ buildscript {
 	}
 }
 
-allprojects{
-	apply plugin: 'build-monitor'
-}
+apply plugin: 'build-monitor'
 
 subprojects{
     apply plugin:'java'
