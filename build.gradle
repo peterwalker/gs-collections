@@ -1,13 +1,18 @@
-buildscript {
-	dependencies {
-		classpath fileTree(dir: '/Users/peterwalker/.m2/repository/com/gradleware', 
-			include: '**/*.jar')
-	}
+//
+//buildscript {
+//	dependencies {
+//		classpath fileTree(dir: '/Users/peterwalker/.m2/repository/com/gradleware', 
+//			include: '**/*.jar')
+//	}
+//}
+//apply plugin: 'build-monitor'
+
+//** Remove this to demo STS Gradle integration.
+allprojects {
+	apply plugin:'eclipse'
 }
 
-apply plugin: 'build-monitor'
-
-subprojects{
+subprojects {
     apply plugin:'java'
     repositories {
         mavenCentral()
