@@ -1,3 +1,4 @@
 dependencies {
 	compile 'net.jcip:jcip-annotations:1.0'
+	compile 'log4j:log4j:1.2.16'
 }
