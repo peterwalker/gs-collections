@@ -1,12 +1,11 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
+JAVA_HOME="/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home"
+echo $JAVA_HOME
 ##############################################################################
 ##
 ##  Gradle start up script for UN*X
 ##
 ##############################################################################
-JAVA_HOME="/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home"
-echo $JAVA_HOME
 
 # Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 DEFAULT_JVM_OPTS="-Xmx1024m -XX:MaxPermSize=256m -Dfile.encoding=UTF-8"
@@ -103,7 +102,7 @@ if [ "$cygwin" = "false" -a "$darwin" = "false" ] ; then
             warn "Could not set maximum file descriptor limit: $MAX_FD"
         fi
     else
-        warn "Could not query businessSystem maximum file descriptor limit: $MAX_FD_LIMIT"
+        warn "Could not query maximum file descriptor limit: $MAX_FD_LIMIT"
     fi
 fi
 

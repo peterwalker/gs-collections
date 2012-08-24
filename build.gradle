@@ -1,9 +1,12 @@
-buildscript {
-	dependencies {
-		classpath fileTree(dir: '/Users/peterwalker/.m2/repository/com/gradleware', 
-			include: '**/*.jar')
-	}
-}
+apply from: "$rootDir/gradle/wrapper.gradle"
+apply from: "$rootDir/gradle/compare.gradle"
+//
+//buildscript {
+//	dependencies {
+//		classpath fileTree(dir: '/Users/peterwalker/.m2/repository/com/gradleware',
+//			include: '**/*.jar')
+//	}
+//}
 //apply plugin: 'build-monitor'
 
 subprojects {
