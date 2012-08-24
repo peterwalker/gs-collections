@@ -1,10 +1,11 @@
 import org.gradle.api.plugins.migration.CompareGradleBuilds
 
 task compare(type: CompareGradleBuilds) {
-	reportDir = "$buildDir/compare-results"
+	reportDir = 'compare-results'
 	targetVersion = '1.2-20120823220007+0000'
+	//targetVersion = 'gradle-1.2-20120822234129+0000'
 }
 
 task clean(type: Delete) {
-	delete "$buildDir"
+	delete 'compare-results'
 }
