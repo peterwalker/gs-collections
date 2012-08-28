@@ -14,4 +14,6 @@ subprojects {
     repositories {
         mavenCentral()
     }
+	apply from: "$rootDir/gradle/secondary.gradle"
+
 }
