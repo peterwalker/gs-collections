@@ -12,6 +12,6 @@ dependencies {
     testCompile "org.slf4j:slf4j-nop:${slf4j_version}"
 }
 
-compileScala{
+compileTestScala {
 	scalaCompileOptions.useAnt = false
 }
