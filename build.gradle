@@ -1,5 +1,6 @@
 apply from: "$rootDir/gradle/wrapper.gradle"
-apply from: "$rootDir/gradle/compare.gradle"
+//apply from: "$rootDir/gradle/compare.gradle"
+
 //
 //buildscript {
 //	dependencies {
@@ -15,5 +16,4 @@ subprojects {
         mavenCentral()
     }
 	apply from: "$rootDir/gradle/secondary.gradle"
-
 }
