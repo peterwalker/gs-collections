@@ -8,3 +8,4 @@ bin
 .DS_Store
 target
 compare-results
+.cache
