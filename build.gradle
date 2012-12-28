@@ -11,9 +11,10 @@ apply from: "$rootDir/gradle/wrapper.gradle"
 //apply plugin: 'build-monitor'
 
 subprojects {
-    apply plugin:'java'
+    apply plugin: 'java'
     repositories {
         mavenCentral()
     }
 	apply from: "$rootDir/gradle/secondary.gradle"
+	apply plugin: 'idea'
 }
