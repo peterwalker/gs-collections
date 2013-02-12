@@ -1,7 +1,6 @@
 apply from: "$rootDir/gradle/wrapper.gradle"
 //apply from: "$rootDir/gradle/compare.gradle"
 
-//
 //buildscript {
 //	dependencies {
 //		classpath fileTree(dir: '/Users/peterwalker/.m2/repository/com/gradleware',
@@ -16,5 +15,8 @@ subprojects {
         mavenCentral()
     }
 	apply from: "$rootDir/gradle/secondary.gradle"
+}
+
+allprojects {
 	apply plugin: 'idea'
 }
