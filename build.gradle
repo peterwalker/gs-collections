@@ -23,4 +23,4 @@ allprojects {
 task clean (dependsOn: getTasksByName('clean', true))
 task build (dependsOn: getTasksByName('build', true))
 build.mustRunAfter clean
-task cleanBuild(dependsOn: [clean,build])
+task cleanAndBuild(dependsOn: [clean,build])
